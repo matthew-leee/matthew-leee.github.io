@@ -1,0 +1,16 @@
+#zn {
+    width: 10em;
+    float: right;
+}
+#cap {
+    width: 10em;
+    float: left;
+}
+
+.good {
+    display: block
+}
+
+#center {
+    width: 10em;
+}

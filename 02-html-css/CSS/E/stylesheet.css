@@ -1,0 +1,29 @@
+.container1 {
+    display: flex;
+    justify-items: flex-start
+}
+
+.container2 {
+    display: flex;
+    justify-items: flex-end
+}
+
+
+#blueContainer {
+    background-color: #0000FE;
+    width : 100px; 
+    height : 100px;
+    align-self: flex-start; 
+}
+#greenContainer {
+    background-color: #008001;
+    width : 100px; 
+    height : 100px;
+    align-self: flex-end; 
+}
+#redContainer {
+    background-color: #FE0000;
+    width : 100px; 
+    height : 100px;
+    align-self: center; 
+}

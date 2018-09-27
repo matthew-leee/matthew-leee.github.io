@@ -1,0 +1,22 @@
+
+#blueContainer {
+    background-color: #0000FE;
+    width : 100px; 
+    height : 100px;
+    float: left;
+}
+#redContainer {
+    background-color: #FE0000;
+    width : 100px; 
+    height : 100px;
+    float: left;
+    clear: left;
+    position: relative;
+    left: 40%
+}
+#greenContainer {
+    background-color: #008001;
+    width : 100px; 
+    height : 100px;
+    float: right;
+}
