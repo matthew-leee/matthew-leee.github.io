@@ -1,0 +1,128 @@
+.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#one {
+    background-image: url('/assets/bg.jpg');
+    background-size: cover;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+#jumboZeroPad {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 0;
+}
+
+ nav { 
+    background-color: transparent;
+    border-bottom: 1px solid red;
+}
+
+hr {
+    display: block;
+    /* unicode-bidi: isolate; */
+    margin-top: 5vw;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    width: 10%;
+}
+
+#scroll {
+    border-radius: 100px;
+}
+
+.hrRow,
+.headRow,
+.pRow,
+.btnRow{
+    margin-top: 3vw;
+    color: white;
+    vertical-align: center;
+}
+
+#about {
+    background-color: blue;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 0;
+}
+
+#fourIcon {
+    background-color: white;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 0;
+}
+
+#bullshit {
+    background-color: black;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 0;
+}
+
+#end {
+    background-color: lightskyblue;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 0;
+}
+
+img {
+    width: 100%
+}
+
+i {
+    font-size: 10vw;
+    text-align: center;
+}
+
+.icon {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+#whiteBg {
+    color: black;
+}

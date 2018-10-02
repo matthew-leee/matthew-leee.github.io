@@ -1,0 +1,108 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <title>towards the end</title>
+</head>
+
+<body>
+    <!-- navbar:must add tag
+      navbar-expand-[screen tag]: the breakpt of changing from full to toggle -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">Fuckoff</a>
+            <!-- navbar-toggler: must add tag 
+            data-toggle: set the default state of data (collapse or not)
+            data-target: the destination of toggling, what to open-->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <!-- navbar-toggler-icon: state the icon of toggling -->
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- contain the navbar-nav and nav-item all in one div! important! -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <!-- ul (navbar-nav) first li (nav-item) second a (nav-link) third -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">fuck</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">off</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- not bootstrap to say form but good for management -->
+        <!-- class need validation = ask for validation -->
+        <!-- novalidate: disable default checking from browser, let js part do the checking -->
+        <form action="" class="main-form need-validation" novalidate>
+            <!-- group eact category into a form-group wrap so to increase padding
+            no need to do it manually 
+            not necessary though-->
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="firstname">FirstName</label>
+                        <!-- is-invalid class: mark the input as invalid 
+                        (also have is-valid) -->
+                        <input type="text" name="firstname" id="firstname" class='form-control is-invalid'>
+                        <!-- following div class appears if really invalid (if valid -> valid-feedback) -->
+                        <div class="invalid-feedback">Looks bad :(</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="lastname">LastName</label>
+                        <!-- required tag: the condition of valid or not-->
+                        <input type="text"" name="lastname" id="lastname" class='form-control' required>
+                        <!-- use small tag to add tiny text below -->
+                        <!-- text-muted class: text then looks muted! amazing! -->
+                        <small class = "form-text text-muted">show some tiny text</small>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <!-- add form-control class to input/select make it occupy full block
+                easier to control if u later wrap it with sth else -->
+                <input type="text" name="username" id="ac" class='form-control is-invalid'>
+                <div class="invalid-feedback">bullshit</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="pw" class='form-control'>
+            </div>
+            <div class="form-group">
+                <!-- create DROPDOWN with select and option -->
+                <label for="gender" id="gender">Gender</label>
+                <select name="gender" id="gender" class='form-control'>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+            </div>
+            <!-- create checkbox -->
+            <!-- checkbox label and elements need to get wrapped by form-check
+            input and label need put in corresponding classes also -->
+            <div class = "form-check">
+                <input type="checkbox" id="accept-terms" class = 'form-check-input'>
+                <label for="accept-terms" class='form-check-label'>Accept Terms &amp; Conditions</label>
+            </div>
+            <!-- use btn-outline-[style] so no solid fill but only a frame -->
+            <!-- add disabled then the button become unclickable and with muted color -->
+            <button type="submit" class='btn btn-outline-danger'>Submit</button>
+        </form>
+
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
