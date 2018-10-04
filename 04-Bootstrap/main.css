@@ -1,3 +1,8 @@
+/* if you put !important after a property it overrides any default */
+/* how to do overlay
+ use hover, when no over opacity is 0, hover opacity change*/
+ /* .[a class] > [sth else] ==> calling that sth else nested inside the class */
+
 .no-gutters {
     margin-left: 0;
     margin-right: 0;
@@ -110,7 +115,25 @@ hr {
 }
 
 img {
-    width: 100%
+    width: 100%;
+    position: relative;
+}
+
+.toHover {
+    background-color: lightseagreen;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    position: absolute;
+    color: white
+}
+
+.toHover:hover {
+    opacity: 0.5;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
 }
 
 i {
@@ -126,3 +149,15 @@ i {
 #whiteBg {
     color: black;
 }
+
+a {
+    color: black
+}
+
+.btn {
+    overflow: hidden;
+}
+
+.navbar-toggler {
+    background-color: red!important;
+  }
