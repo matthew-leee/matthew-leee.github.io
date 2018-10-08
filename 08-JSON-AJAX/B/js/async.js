@@ -16,24 +16,24 @@
 // http.send();
 
 // searching by capital
-function tellme (endpoint, value, callback){
+// function tellme (endpoint, value, callback){
     let http = new XMLHttpRequest();
 
-    http.open("GET", `https://restcountries.eu/rest/v2/${endpoint}/${value}`);
+    http.open("GET", "../server/data.json");
     
     http.onreadystatechange = function() {
         if(http.readyState != XMLHttpRequest.DONE) {
             return;
         } else if(http.status == 200) {
-            callback(http.responseText)
+            console.log(http.responseText)
         } else {
             console.log('error occurred' + http.status);
         }
     }
     
     http.send();
-}
+// }
 
-tellme ('capital', 'Berlin', function(data){
-    console.log(JSON.parse(data))
-})
+// tellme ('capital', 'Berlin', function(data){
+//     console.log(JSON.parse(data))
+// })
