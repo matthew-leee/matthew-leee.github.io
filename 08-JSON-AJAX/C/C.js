@@ -18,6 +18,7 @@ function inSpace (callback) {
 
 inSpace (function(data){
     let jsonData = JSON.parse(data);
+    // use map to manipulate more clever man
     for (i=0; i<jsonData.people.length; i++){
         console.log (jsonData.people[i].name);
     }
