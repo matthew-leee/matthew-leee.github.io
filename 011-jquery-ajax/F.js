@@ -75,7 +75,7 @@ function someWhereTime(latitude, longtitude){
             }
         } 
         console.log (arrStr);
-        console.log (`timDiff is ${arrStr[0]}:${arrStr[1]}:${arrStr[2]}`)
+        console.log (`timeDiff is ${arrStr[0]}:${arrStr[1]}:${arrStr[2]}`)
         return `${arrStr[0]}:${arrStr[1]}:${arrStr[2]}`
     }
     
@@ -121,8 +121,9 @@ function someWhereTime(latitude, longtitude){
 
 let lat = $("input[name=lat]").val();
 let long = $("input[name=long]").val();
-
+90
 someWhereTime(lat,long);
+
 
 
 
